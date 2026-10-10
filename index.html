@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Md. Mezbaul Hasan — Analytics &amp; Conversion Tracking Specialist</title>
+<meta name="description" content="Independent analytics and conversion tracking specialist. GA4, Meta Pixel &amp; Conversions API, Google Ads, TikTok Events API, server-side GTM and Shopify tracking — implemented, validated and documented."/>
+<meta name="author" content="Md. Mezbaul Hasan"/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Md. Mezbaul Hasan — Analytics &amp; Conversion Tracking Specialist"/>
+<meta property="og:description" content="Know what converts. Make smarter marketing decisions. Clean, reliable tracking across GA4, Meta, Google Ads and TikTok — from the first click to the final conversion."/>
+<meta property="og:image" content="./assets/portrait.webp"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Md. Mezbaul Hasan — Analytics &amp; Conversion Tracking Specialist"/>
+<meta name="twitter:description" content="Clean, reliable tracking across GA4, Meta, Google Ads and TikTok — from the first click to the final conversion."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23193d35'/%3E%3Ctext x='32' y='41' font-family='Georgia,serif' font-size='26' fill='%23eef5f0' text-anchor='middle'%3EMH%3C/text%3E%3C/svg%3E"/>
+<link rel="stylesheet" href="./review-showcase.css"/>
+<style>
+:root{
+  --paper:#f7f8f5; --white:#ffffff; --ink:#142333; --deep:#132c2c; --deep2:#193d35;
+  --green:#1c6756; --green-l:#248570; --muted:#667480; --line:#dce3e3;
+  --sans:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --serif:Georgia,"Times New Roman",serif;
+  --shadow:0 22px 60px -38px rgba(35,63,58,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,p{margin-top:0}
+.container{max-width:1192px;margin:0 auto;padding:0 28px}
+.kicker{display:inline-flex;align-items:center;gap:9px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green)}
+.kicker::before{content:"";height:7px;width:7px;border-radius:50%;background:#2d826b}
+.kicker-light{color:#a9c8bc} .kicker-light::before{background:#67b79c}
+.section-title{font-size:clamp(34px,4.2vw,52px);font-weight:550;letter-spacing:-2.2px;line-height:1.12;margin:16px 0 0}
+.section-title em{font-family:var(--serif);font-weight:400;color:var(--green);letter-spacing:-1px}
+.section-lead{max-width:520px;color:var(--muted);font-size:15px;line-height:1.85;margin:18px 0 0}
+.skip{position:absolute;left:-9999px;top:0;background:var(--deep);color:#fff;padding:10px 16px;border-radius:8px;z-index:200}
+.skip:focus{left:12px;top:12px}
+/* Header */
+.site-header{position:sticky;top:0;z-index:100;background:rgba(247,248,245,.88);backdrop-filter:blur(12px);border-bottom:1px solid rgba(220,227,227,.8)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;height:70px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:650;letter-spacing:-.3px;font-size:15px;white-space:nowrap}
+.brand-mark{width:36px;height:36px;border-radius:10px;background:var(--deep2);color:#eef5f0;display:grid;place-items:center;font-family:var(--serif);font-size:14px}
+.brand-role{color:var(--muted);font-weight:500;font-size:12px;margin-left:2px}
+.nav-links{display:flex;align-items:center;gap:26px;list-style:none;margin:0;padding:0}
+.nav-links a{text-decoration:none;font-size:13.5px;color:#3d4f5c;font-weight:520;transition:color .18s}
+.nav-links a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;gap:9px;border-radius:50px;padding:13px 24px;font-size:13.5px;font-weight:640;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .18s,background .18s,box-shadow .18s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--green);color:#fff;box-shadow:0 12px 30px -14px rgba(28,103,86,.65)}
+.btn-primary:hover{background:#175a4b}
+.btn-ghost{border-color:#cfdad4;color:var(--ink);background:transparent}
+.btn-ghost:hover{background:#e9efe9}
+.btn-light{background:#fff;color:var(--deep)}
+.btn-outline-light{border-color:rgba(255,255,255,.35);color:#eef5f0}
+.btn-outline-light:hover{background:rgba(255,255,255,.1)}
+.btn .wa-icon{width:16px;height:16px;flex:0 0 auto}
+.nav-cta{display:inline-flex}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:9px;width:42px;height:38px;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:4px;padding:0}
+.burger span{display:block;width:17px;height:2px;background:var(--ink);border-radius:2px}
+.mobile-menu{display:none;border-top:1px solid var(--line);background:var(--white)}
+.mobile-menu.open{display:block}
+.mobile-menu ul{list-style:none;margin:0;padding:12px 28px 18px}
+.mobile-menu a{display:block;padding:11px 0;text-decoration:none;font-size:15px;border-bottom:1px solid #edf0eb}
+.mobile-menu .btn{margin-top:14px;width:100%;justify-content:center}
+/* Hero */
+.hero{position:relative;background:var(--deep);color:#eef5f0;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 900px 480px at 82% -10%,rgba(72,150,128,.28),transparent 62%),radial-gradient(ellipse 700px 420px at -10% 110%,rgba(46,110,92,.25),transparent 60%)}
+.hero-grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(ellipse 80% 80% at 50% 30%,#000 30%,transparent 80%);pointer-events:none}
+.hero-inner{position:relative;display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center;padding:92px 28px 96px;max-width:1192px;margin:0 auto}
+.hero h1{font-size:clamp(40px,5.4vw,66px);font-weight:550;letter-spacing:-3px;line-height:1.06;margin:22px 0 0}
+.hero h1 em{font-family:var(--serif);font-style:italic;font-weight:400;color:#9fd0bd;letter-spacing:-1.5px}
+.hero-sub{font-size:clamp(15px,1.5vw,18px);line-height:1.8;color:#c3d4cd;max-width:520px;margin:26px 0 0}
+.hero-tag{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.18);border-radius:50px;padding:9px 16px;font-size:11.5px;letter-spacing:.6px;color:#cfe2da;background:rgba(255,255,255,.05)}
+.hero-tag b{color:#8fd0b6;font-weight:650}
+.hero-cta{display:flex;flex-wrap:wrap;gap:13px;margin-top:36px}
+.hero-trust{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:38px;padding-top:26px;border-top:1px solid rgba(255,255,255,.12)}
+.hero-trust span{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:#a9c2b9}
+.hero-trust svg{width:14px;height:14px;color:#7cc5a9}
+/* Hero visual card */
+.hv{background:#0f2626;border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:22px;box-shadow:0 40px 90px -40px rgba(0,0,0,.65);transform:rotate(1.2deg)}
+.hv-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}
+.hv-title{font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:#8fb3a8;font-weight:650}
+.hv-pill{font-size:9px;letter-spacing:.6px;color:#cfe8de;background:rgba(110,190,165,.16);border:1px solid rgba(110,190,165,.35);border-radius:30px;padding:5px 9px}
+.hv-row{display:flex;align-items:flex-end;gap:10px;height:120px;padding:0 4px 12px;border-bottom:1px solid rgba(255,255,255,.09)}
+.hv-bar{flex:1;border-radius:7px 7px 3px 3px;background:linear-gradient(180deg,#4fae8d,#2b6e5c);opacity:.9}
+.hv-bar:nth-child(odd){background:linear-gradient(180deg,#3d7f6c,#234f45)}
+.hv-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.hv-stat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px}
+.hv-stat b{display:block;font-size:17px;letter-spacing:-.5px;color:#eaf6f0;font-weight:600}
+.hv-stat span{font-size:10px;color:#93b1a7;letter-spacing:.4px}
+.hv-caption{margin-top:14px;font-size:10px;color:#7d9a91;display:flex;align-items:center;gap:7px}
+.hv-caption::before{content:"";width:5px;height:5px;border-radius:50%;background:#67b79c}
+/* Platform strip */
+.strip{background:var(--white);border-bottom:1px solid var(--line)}
+.strip-inner{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px 38px;padding:22px 28px}
+.strip span{font-size:12.5px;letter-spacing:1.4px;text-transform:uppercase;color:#8695a0;font-weight:600}
+/* Services */
+.services{padding:96px 0 84px}
+.svc-head{display:flex;justify-content:space-between;align-items:flex-end;gap:36px;flex-wrap:wrap;margin-bottom:46px}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.svc-card{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:28px 26px 26px;display:flex;flex-direction:column;transition:transform .22s ease,box-shadow .22s ease,border-color .22s}
+.svc-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#bfd3ca}
+.svc-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+.svc-no{font-family:var(--serif);font-size:13px;color:var(--green);letter-spacing:1px}
+.svc-arrow{width:30px;height:30px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--green);font-size:13px}
+.svc-card h3{font-size:18.5px;letter-spacing:-.5px;font-weight:600;line-height:1.35;margin:0 0 12px}
+.svc-card p{color:var(--muted);font-size:13.5px;line-height:1.8;margin:0 0 20px}
+.svc-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}
+.svc-tags span{font-size:10px;letter-spacing:.3px;color:#4c6357;background:#eef3ee;border:1px solid #dde7dd;border-radius:30px;padding:5px 10px}
+/* Process */
+.process{background:var(--deep);color:#eef5f0;padding:92px 0}
+.process .section-title{color:#f2f8f4}
+.process .section-title em{color:#9fd0bd}
+.pr-grid{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:52px 0 0;padding:0}
+.pr-step{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:26px 22px;position:relative}
+.pr-no{font-family:var(--serif);color:#8fd0b6;font-size:13px;letter-spacing:1.5px}
+.pr-step h3{font-size:17px;letter-spacing:-.3px;font-weight:600;margin:14px 0 10px}
+.pr-step p{color:#b7ccc4;font-size:13px;line-height:1.8;margin:0}
+/* Work / evidence */
+.work{padding:96px 0 70px}
+.work-note{max-width:560px;margin:20px 0 0;color:var(--muted);font-size:13.5px;line-height:1.85}
+.wi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:48px}
+.wi-card{background:var(--white);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .22s,box-shadow .22s}
+.wi-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.wi-media{position:relative;border:0;padding:0;cursor:zoom-in;background:#eef2ef;width:100%;display:block;border-bottom:1px solid var(--line)}
+.wi-media img{width:100%;height:250px;object-fit:cover;object-position:top center}
+.wi-zoom{position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;background:rgba(19,44,44,.82);color:#fff;display:grid;place-items:center;font-size:13px;opacity:0;transition:opacity .2s}
+.wi-media:hover .wi-zoom{opacity:1}
+.wi-body{padding:24px 26px 26px;display:flex;flex-direction:column;flex:1}
+.wi-eyebrow{display:flex;align-items:center;gap:8px;font-size:10px;font-weight:700;letter-spacing:1.7px;text-transform:uppercase;color:var(--green)}
+.wi-dot{width:6px;height:6px;border-radius:50%;background:#2d826b}
+.wi-no{margin-left:auto;color:#9db0a6;font-family:var(--serif);letter-spacing:1px}
+.wi-body h3{font-size:19px;letter-spacing:-.5px;margin:14px 0 10px;font-weight:600}
+.wi-body p{color:var(--muted);font-size:13px;line-height:1.8;margin:0 0 18px}
+.wi-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}
+.wi-tag{font-size:10px;letter-spacing:.3px;color:#4c6357;background:#eef3ee;border:1px solid #dde7dd;border-radius:30px;padding:5px 10px}
+.work-disclaimer{margin-top:34px;font-size:11.5px;color:#8794a0;line-height:1.9;max-width:760px}
+/* About */
+.about{padding:84px 0 96px}
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:58px;align-items:center}
+.about-photo{position:relative}
+.about-photo>img{border-radius:22px;box-shadow:var(--shadow);width:100%;max-width:420px;aspect-ratio:4/4.6;object-fit:cover;object-position:top center}
+.about-badge{position:absolute;bottom:18px;left:18px;right:18px;background:rgba(255,255,255,.95);border:1px solid var(--line);border-radius:14px;padding:14px 18px;display:flex;align-items:center;gap:12px;box-shadow:0 18px 40px -22px rgba(19,44,44,.4)}
+.about-badge img{width:42px;height:42px;border-radius:50%;max-width:none;aspect-ratio:auto;box-shadow:none}
+.about-badge b{display:block;font-size:13px}
+.about-badge span{font-size:11px;color:var(--muted)}
+.about-text h2{font-size:clamp(30px,3.6vw,44px);letter-spacing:-1.8px;line-height:1.15;font-weight:550;margin:16px 0 0}
+.about-text h2 em{font-family:var(--serif);font-weight:400;color:var(--green)}
+.about-text p{color:var(--muted);font-size:14.5px;line-height:1.95;margin:20px 0 0;max-width:560px}
+.about-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.about-chips span{font-size:11px;letter-spacing:.3px;color:#33524a;background:#e9f0ea;border:1px solid #d3e0d4;border-radius:30px;padding:7px 13px}
+.about-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+/* Contact */
+.contact{background:linear-gradient(180deg,#132c2c,#0f2323);color:#eef5f0;padding:100px 0 92px;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 700px 380px at 85% 20%,rgba(88,170,142,.22),transparent 60%);pointer-events:none}
+.contact-inner{position:relative;text-align:center;max-width:720px;margin:0 auto}
+.contact h2{font-size:clamp(36px,4.6vw,58px);font-weight:550;letter-spacing:-2.6px;line-height:1.1;margin:18px 0 0}
+.contact h2 em{font-family:var(--serif);font-weight:400;color:#9fd0bd}
+.contact p{color:#b7ccc4;font-size:16px;line-height:1.85;margin:22px auto 0;max-width:520px}
+.contact-cta{display:flex;justify-content:center;flex-wrap:wrap;gap:13px;margin-top:38px}
+.contact-links{display:flex;justify-content:center;flex-wrap:wrap;gap:10px 28px;margin-top:36px;padding-top:28px;border-top:1px solid rgba(255,255,255,.12)}
+.contact-links a{display:inline-flex;align-items:center;gap:8px;color:#c3d4cd;text-decoration:none;font-size:13px;transition:color .18s}
+.contact-links a:hover{color:#fff}
+.contact-links svg{width:15px;height:15px}
+/* Footer */
+.site-footer{background:#0c1e1e;color:#8fa8a0;padding:34px 0}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;font-size:12px}
+.footer-inner a{color:#a9c2b9;text-decoration:none}
+.footer-inner a:hover{color:#fff}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap}
+/* Lightbox */
+.zoom-dialog{border:1px solid #cfdcd5;border-radius:17px;padding:0;width:min(1100px,94vw);max-height:92vh;overflow:auto;background:#f6f8f5;box-shadow:0 25px 100px rgba(6,27,49,.35)}
+.zoom-dialog::backdrop{background:rgba(12,32,44,.72);backdrop-filter:blur(7px)}
+.zoom-head{padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:18px;border-bottom:1px solid #dce4df}
+.zoom-head h3{margin:0;font-size:16px;font-weight:600}
+.zoom-close{border:1px solid #cfdad4;background:#fff;color:#243b32;border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:20px;line-height:1}
+.zoom-dialog img{display:block;max-width:100%;max-height:70vh;width:auto;margin:18px auto}
+.zoom-caption{font-size:11px;color:#617169;padding:0 22px 20px;margin:0;line-height:1.8}
+
+/* Contact form */
+.cform{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:32px 32px 28px;max-width:720px;margin:46px auto 0;text-align:left}
+.cform-head h3{font-size:21px;letter-spacing:-.5px;font-weight:600;margin:0 0 8px;color:#f2f8f4}
+.cform-head p{color:#b7ccc4;font-size:13px;line-height:1.75;margin:0 0 24px}
+.cform-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.cform-field{display:block;margin:0 0 15px}
+.cform-field>span{display:block;font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:#a9c2b9;margin-bottom:8px;font-weight:650}
+.cform-field input,.cform-field select,.cform-field textarea{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);color:#eef5f0;border-radius:11px;padding:13px 15px;font-size:14px;font-family:inherit;line-height:1.5;transition:border-color .18s,background .18s}
+.cform-field input::placeholder,.cform-field textarea::placeholder{color:#7d948c}
+.cform-field input:focus,.cform-field select:focus,.cform-field textarea:focus{outline:none;border-color:#67b79c;background:rgba(255,255,255,.11)}
+.cform-field textarea{resize:vertical;min-height:118px}
+.cform-field select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23a9c2b9' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center;padding-right:38px}
+.cform-field select option{color:#142333;background:#fff}
+.cform-field.invalid input,.cform-field.invalid select,.cform-field.invalid textarea{border-color:#e8917f;background:rgba(232,145,127,.12)}
+.cform-foot{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin-top:6px}
+.cform-mail{color:#c3d4cd;font-size:12.5px;text-decoration:underline;text-underline-offset:3px}
+.cform-mail:hover{color:#fff}
+.cform-status{margin:16px 0 0;font-size:12.5px;line-height:1.7;color:#9fd0bd;min-height:20px}
+.cform-status.error{color:#f2b8ab}
+
+/* Booking / Calendly */
+section[id]{scroll-margin-top:92px}
+.booking{padding:84px 0 90px;background:linear-gradient(180deg,#f7f8f5,#eef2ec)}
+.bk-head{display:flex;justify-content:space-between;align-items:flex-end;gap:36px;flex-wrap:wrap;margin-bottom:40px}
+.bk-shell{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
+.bk-bar{display:flex;align-items:center;gap:12px;padding:14px 20px;border-bottom:1px solid var(--line);background:#fbfcfa}
+.bk-dots{display:flex;gap:5px}
+.bk-dots i{width:9px;height:9px;border-radius:50%;background:#d8e0d6;display:block}
+.bk-dots i:nth-child(1){background:#e8b0a4}
+.bk-dots i:nth-child(2){background:#e8d4a4}
+.bk-dots i:nth-child(3){background:#a8d4bc}
+.bk-bar-title{font-size:11px;letter-spacing:.4px;color:#71837f;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bk-bar-badge{margin-left:auto;font-size:10px;letter-spacing:.4px;color:#33524a;background:#e9f0ea;border:1px solid #d3e0d4;border-radius:30px;padding:5px 11px;white-space:nowrap}
+.bk-frame{position:relative;min-height:420px}
+.bk-fallback{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;min-height:420px;padding:40px 24px}
+.bk-fallback[hidden]{display:none}
+.bk-fallback h3{margin:0;font-size:19px;letter-spacing:-.4px}
+.bk-fallback p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.8;max-width:420px}
+.bk-actions{display:flex;flex-wrap:wrap;gap:11px;justify-content:center;margin-top:6px}
+.bk-note{margin:22px auto 0;max-width:640px;text-align:center;font-size:12.5px;color:var(--muted);line-height:1.9}
+.bk-note a{color:var(--green);font-weight:640;text-decoration:underline;text-underline-offset:3px}
+.bk-note a:hover{color:var(--deep)}
+@media(max-width:860px){.bk-head{align-items:start}.bk-bar-badge{display:none}.calendly-inline-widget{height:680px!important;min-width:0!important}}
+@media(max-width:620px){.booking{padding:64px 0}.calendly-inline-widget{height:620px!important}}
+/* Responsive */
+@media (max-width:1020px){
+  .hero-inner{grid-template-columns:1fr;gap:44px;padding:72px 28px 78px}
+  .hv{transform:none;max-width:520px}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .pr-grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .about-photo>img{max-width:360px}
+}
+@media (max-width:860px){
+  .nav-links,.nav-cta{display:none}
+  .burger{display:flex}
+  .wi-grid{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+  .container{padding:0 18px}
+  .hero-inner{padding:56px 18px 62px}
+  .hero h1{letter-spacing:-2px}
+  .hero-cta .btn,.contact-cta .btn{width:100%;justify-content:center}
+  .services{padding:64px 0 54px}
+  .svc-grid,.pr-grid{grid-template-columns:1fr}
+  .process{padding:64px 0}
+  .work{padding:64px 0 48px}
+  .wi-media img{height:200px}
+  .about{padding:56px 0 66px}
+  .contact{padding:72px 0 64px}
+  .strip-inner{gap:10px 22px;padding:18px}
+  .strip span{font-size:10.5px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Md. Mezbaul Hasan — home">
+      <span class="brand-mark" aria-hidden="true">MH</span>
+      <span>Md. Mezbaul Hasan<span class="brand-role"> · Analytics &amp; Tracking</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="#book">
+      <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.83c2.16 0 4.19.84 5.72 2.37a8.04 8.04 0 0 1 2.37 5.72c0 4.46-3.63 8.08-8.1 8.08a8.2 8.2 0 0 1-4.13-1.13l-.3-.18-3.08.81.82-3-.19-.31a8.05 8.05 0 0 1-1.24-4.29c0-4.45 3.63-8.07 8.13-8.07zm-2.5 4.2c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29-.25-.13-1.46-.72-1.69-.8-.23-.09-.39-.13-.56.12-.17.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.65-1.23-1.46-1.37-1.71-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.55-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48z"/></svg>
+      Book a free call
+    </a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" data-mobile-menu>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div style="padding:0 28px 22px">
+      <a class="btn btn-primary" href="#book">Book a free call</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-grid-lines" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div>
+        <span class="hero-tag"><b>AI-Powered Tracking</b> <span aria-hidden="true">→</span> Higher ROAS &amp; ROI</span>
+        <h1>Know what converts.<br/><em>Make smarter marketing decisions.</em></h1>
+        <p class="hero-sub">Analytics and conversion tracking for businesses that need clearer data—from the first click to the final conversion. Accurate events across Meta, Google, GA4 and TikTok — browser and server-side.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://wa.me/8801737254856?text=Hi%20Mezbaul%2C%20I%27d%20like%20to%20discuss%20my%20tracking%20setup." target="_blank" rel="noopener noreferrer">
+            <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.83c2.16 0 4.19.84 5.72 2.37a8.04 8.04 0 0 1 2.37 5.72c0 4.46-3.63 8.08-8.1 8.08a8.2 8.2 0 0 1-4.13-1.13l-.3-.18-3.08.81.82-3-.19-.31a8.05 8.05 0 0 1-1.24-4.29c0-4.45 3.63-8.07 8.13-8.07zm-2.5 4.2c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29-.25-.13-1.46-.72-1.69-.8-.23-.09-.39-.13-.56.12-.17.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.65-1.23-1.46-1.37-1.71-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.55-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48z"/></svg>
+            Chat on WhatsApp
+          </a>
+          <a class="btn btn-outline-light" href="#work">See selected work</a>
+        </div>
+        <div class="hero-trust">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Browser + server-side tagging</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Event-level QA &amp; dedup checks</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Clear handover documentation</span>
+        </div>
+      </div>
+      <div class="hv" aria-hidden="true">
+        <div class="hv-head">
+          <span class="hv-title">Event health overview</span>
+          <span class="hv-pill">Concept view · illustrative</span>
+        </div>
+        <div class="hv-row">
+          <div class="hv-bar" style="height:58%"></div>
+          <div class="hv-bar" style="height:74%"></div>
+          <div class="hv-bar" style="height:46%"></div>
+          <div class="hv-bar" style="height:88%"></div>
+          <div class="hv-bar" style="height:66%"></div>
+          <div class="hv-bar" style="height:92%"></div>
+          <div class="hv-bar" style="height:54%"></div>
+          <div class="hv-bar" style="height:78%"></div>
+        </div>
+        <div class="hv-stats">
+          <div class="hv-stat"><b>GA4</b><span>Web + server events</span></div>
+          <div class="hv-stat"><b>Meta</b><span>Pixel + CAPI matched</span></div>
+          <div class="hv-stat"><b>Ads</b><span>Conversions verified</span></div>
+        </div>
+        <div class="hv-caption">Illustrative layout — no live client data shown</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATFORM STRIP -->
+  <div class="strip" aria-label="Platforms I work with">
+    <div class="strip-inner">
+      <span>Google Analytics 4</span>
+      <span>Meta Pixel &amp; CAPI</span>
+      <span>Google Ads</span>
+      <span>TikTok Events API</span>
+      <span>Google Tag Manager</span>
+      <span>Shopify</span>
+      <span>WordPress</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="svc-head">
+        <div>
+          <span class="kicker">What I do</span>
+          <h2 class="section-title">Tracking that stands up<br/><em>to real decision-making.</em></h2>
+        </div>
+        <p class="section-lead">Every service below is implemented hands-on — from the data layer to the server container — and validated before it ships.</p>
+      </div>
+      <div class="svc-grid">
+            <article class="svc-card">
+              <div class="svc-top"><span class="svc-no">01</span><span class="svc-arrow" aria-hidden="true">↗</span></div>
+              <h3>Server-Side Tagging &amp; Custom Events</h3>
+              <p>Custom event design and server-side GTM so your data is accurate, first-party and resilient to browser restrictions.</p>
+              <div class="svc-tags"><span>Web GTM</span><span>Server GTM</span><span>Custom events</span><span>Data layer</span></div>
+            </article>
+            <article class="svc-card">
+              <div class="svc-top"><span class="svc-no">02</span><span class="svc-arrow" aria-hidden="true">↗</span></div>
+              <h3>Meta Pixel — Browser Ecommerce Tracking</h3>
+              <p>Full ecommerce funnel coverage: ViewContent, AddToCart, InitiateCheckout and Purchase with complete product parameters.</p>
+              <div class="svc-tags"><span>Meta Pixel</span><span>Ecommerce</span><span>Product catalog params</span></div>
+            </article>
+            <article class="svc-card">
+              <div class="svc-top"><span class="svc-no">03</span><span class="svc-arrow" aria-hidden="true">↗</span></div>
+              <h3>Meta Pixel + Conversions API</h3>
+              <p>Browser and server events working together — with event deduplication and match-quality checks done properly.</p>
+              <div class="svc-tags"><span>CAPI</span><span>Deduplication</span><span>Event matching</span></div>
+            </article>
+            <article class="svc-card">
+              <div class="svc-top"><span class="svc-no">04</span><span class="svc-arrow" aria-hidden="true">↗</span></div>
+              <h3>GA4 Ecommerce Tracking</h3>
+              <p>Reliable GA4 setup for ecommerce and lead-gen sites — standard and custom events, validated in DebugView before handover.</p>
+              <div class="svc-tags"><span>GA4</span><span>DebugView</span><span>Ecommerce events</span></div>
+            </article>
+            <article class="svc-card">
+              <div class="svc-top"><span class="svc-no">05</span><span class="svc-arrow" aria-hidden="true">↗</span></div>
+              <h3>Google Ads Conversion Tracking</h3>
+              <p>Conversion actions, tags and enhanced conversions (user-provided data) — including Shopify storefronts.</p>
+              <div class="svc-tags"><span>Google Ads</span><span>Enhanced conversions</span><span>Shopify</span></div>
+            </article>
+            <article class="svc-card">
+              <div class="svc-top"><span class="svc-no">06</span><span class="svc-arrow" aria-hidden="true">↗</span></div>
+              <h3>TikTok Pixel + Events API</h3>
+              <p>Pixel and server events with matching event IDs — so TikTok sees clean, deduplicated conversion signals.</p>
+              <div class="svc-tags"><span>TikTok Pixel</span><span>Events API</span><span>Event IDs</span></div>
+            </article>
+            <article class="svc-card">
+              <div class="svc-top"><span class="svc-no">07</span><span class="svc-arrow" aria-hidden="true">↗</span></div>
+              <h3>Forms, Booking &amp; Video Tracking</h3>
+              <p>Turn form submits, bookings and video engagement into measurable events you can actually optimise toward.</p>
+              <div class="svc-tags"><span>Form tracking</span><span>Booking events</span><span>Video events</span></div>
+            </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <span class="kicker kicker-light">How I work</span>
+      <h2 class="section-title">A simple process.<br/><em>Thorough execution.</em></h2>
+      <ol class="pr-grid">
+            <li class="pr-step">
+              <span class="pr-no">01</span>
+              <h3>Audit &amp; tracking plan</h3>
+              <p>I map every conversion that matters and how it should be measured across platforms.</p>
+            </li>
+            <li class="pr-step">
+              <span class="pr-no">02</span>
+              <h3>Clean implementation</h3>
+              <p>Web + server-side tagging built with consistent naming, parameters and privacy-aware design.</p>
+            </li>
+            <li class="pr-step">
+              <span class="pr-no">03</span>
+              <h3>Validation &amp; QA</h3>
+              <p>DebugView, Events Manager and tag diagnostics — checked live until events and match quality look right.</p>
+            </li>
+            <li class="pr-step">
+              <span class="pr-no">04</span>
+              <h3>Documentation &amp; handover</h3>
+              <p>You get a clear summary of what was set up, where it lives and how to keep it healthy.</p>
+            </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SELECTED IMPLEMENTATIONS -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="svc-head">
+        <div>
+          <span class="kicker">Selected implementations</span>
+          <h2 class="section-title">Real setup work.<br/><em>Shown openly.</em></h2>
+        </div>
+        <p class="work-note">These projects are from my own demo and training builds — real configuration work I completed and documented end-to-end, shared transparently so you can see exactly how I build and verify tracking.</p>
+      </div>
+      <div class="wi-grid">
+          <article class="wi-card">
+            <button class="wi-media" type="button" data-zoom="./assets/meta-deduplication.webp" data-zoom-title="Server-side purchase forwarding" aria-label="Enlarge screenshot: Server-side purchase forwarding">
+              <img src="./assets/meta-deduplication.webp" alt="Server container preview showing a purchase event claimed by GA4 with an outgoing HTTP 200 request forwarding data to Meta CAPI." width="1500" height="680" loading="lazy" decoding="async"/>
+              <span class="wi-zoom" aria-hidden="true">⤢</span>
+            </button>
+            <div class="wi-body">
+              <div class="wi-eyebrow"><span class="wi-dot" aria-hidden="true"></span>Server-side tagging<span class="wi-no">01</span></div>
+              <h3>Server-side purchase forwarding</h3>
+              <p>Web and server GTM working together — purchase data claimed by GA4 and forwarded to Meta CAPI over a first-party endpoint.</p>
+              <div class="wi-tags"><span class="wi-tag">Web GTM</span><span class="wi-tag">Server GTM</span><span class="wi-tag">Meta CAPI</span><span class="wi-tag">GA4</span></div>
+            </div>
+          </article>
+          <article class="wi-card">
+            <button class="wi-media" type="button" data-zoom="./assets/ga4-purchase.webp" data-zoom-title="GA4 ecommerce, validated live" aria-label="Enlarge screenshot: GA4 ecommerce, validated live">
+              <img src="./assets/ga4-purchase.webp" alt="GA4 DebugView showing purchase, add_to_cart and funnel events received via a server container." width="1500" height="680" loading="lazy" decoding="async"/>
+              <span class="wi-zoom" aria-hidden="true">⤢</span>
+            </button>
+            <div class="wi-body">
+              <div class="wi-eyebrow"><span class="wi-dot" aria-hidden="true"></span>GA4 ecommerce<span class="wi-no">02</span></div>
+              <h3>GA4 ecommerce, validated live</h3>
+              <p>DebugView confirmation of purchase and full-funnel events flowing through a server container into Google Analytics 4.</p>
+              <div class="wi-tags"><span class="wi-tag">GA4</span><span class="wi-tag">Ecommerce</span><span class="wi-tag">DebugView QA</span></div>
+            </div>
+          </article>
+          <article class="wi-card">
+            <button class="wi-media" type="button" data-zoom="./assets/ads-server.webp" data-zoom-title="Google Ads — browser + server" aria-label="Enlarge screenshot: Google Ads — browser + server">
+              <img src="./assets/ads-server.webp" alt="Google Tag Manager preview showing browser, server and user-provided-data purchase tags fired successfully." width="1500" height="680" loading="lazy" decoding="async"/>
+              <span class="wi-zoom" aria-hidden="true">⤢</span>
+            </button>
+            <div class="wi-body">
+              <div class="wi-eyebrow"><span class="wi-dot" aria-hidden="true"></span>Google Ads<span class="wi-no">03</span></div>
+              <h3>Google Ads — browser + server</h3>
+              <p>Conversion tags firing on purchase with user-provided data, ready for enhanced conversions and cleaner bidding signals.</p>
+              <div class="wi-tags"><span class="wi-tag">Google Ads</span><span class="wi-tag">GTM</span><span class="wi-tag">Enhanced conversions</span></div>
+            </div>
+          </article>
+          <article class="wi-card">
+            <button class="wi-media" type="button" data-zoom="./assets/tiktok-purchase.webp" data-zoom-title="TikTok product data, event-ready" aria-label="Enlarge screenshot: TikTok product data, event-ready">
+              <img src="./assets/tiktok-purchase.webp" alt="Data layer variables showing structured TikTok product content arrays for a purchase event." width="1500" height="680" loading="lazy" decoding="async"/>
+              <span class="wi-zoom" aria-hidden="true">⤢</span>
+            </button>
+            <div class="wi-body">
+              <div class="wi-eyebrow"><span class="wi-dot" aria-hidden="true"></span>TikTok tracking<span class="wi-no">04</span></div>
+              <h3>TikTok product data, event-ready</h3>
+              <p>content_ids, content_names and structured product arrays prepared for Pixel and Events API payloads — dedupe-ready.</p>
+              <div class="wi-tags"><span class="wi-tag">TikTok Pixel</span><span class="wi-tag">Events API</span><span class="wi-tag">Data layer</span></div>
+            </div>
+          </article>
+      </div>
+      <p class="work-disclaimer">Screenshots are from my own demo/training environments and are lightly annotated to highlight the technical details that matter. Live buyer project material stays private.</p>
+    </div>
+  </section>
+
+  <!-- FEEDBACK & PROJECT HIGHLIGHTS -->
+<section class="client-showcase" id="client-feedback" data-client-showcase aria-labelledby="cr-heading"><div class="cr-container">
+<div class="cr-kicker">Feedback & project highlights</div><div class="cr-heading-row"><h2 id="cr-heading">Good work.<br/><em>In their words.</em></h2><p class="cr-intro">A closer look at the feedback shared with me—and the work behind it.</p></div>
+<div class="cr-stage" role="region" aria-roledescription="carousel" aria-label="Reviews and accompanying project images"><article class="cr-slide" data-author="jamesdodds" data-reading-time="20000" aria-label="Review 1 of 3" aria-roledescription="slide" >
+<div class="cr-review"><div class="cr-review-top"><div class="cr-stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span><span class="cr-rating">5.0</span></div><span class="cr-type">Written feedback</span></div>
+<div class="cr-quote-mark" aria-hidden="true">“</div><blockquote class="">Used Mezbah number of times now, and he&#x27;s always been fantastic. His attention to detail and making sure the job gets done right and not just quickly, for me, sets him apart. Thanks again for your help. I&#x27;m sure we&#x27;ll be back again in contact soon.</blockquote>
+<div class="cr-author"><img src="./assets/reviews/jamesdodds-avatar.webp" alt="jamesdodds profile photo from supplied review" width="160" height="160" loading="lazy"/><div><p class="cr-author-name">jamesdodds</p><div class="cr-author-country"><span aria-hidden="true">🇬🇧</span> United Kingdom</div></div><span class="cr-author-icon" aria-hidden="true">”</span></div></div>
+<div class="cr-project"><div class="cr-project-eyebrow"><span>THE ACCOMPANYING PROJECT</span><span>WordPress · Cookiebot</span></div>
+<button class="cr-window" type="button" data-enlarge data-title="Consent management setup" aria-label="Enlarge Consent management setup screenshot"><span class="cr-window-bar" aria-hidden="true"><span class="cr-window-dot"></span><span class="cr-window-dot"></span><span class="cr-window-dot"></span><span class="cr-window-label">Implementation snapshot</span><span class="cr-window-enlarge">⤢</span></span><img src="./assets/reviews/jamesdodds-project.webp" alt="A look at the Cookiebot CMP setup in WordPress." width="1600" height="880" loading="eager"/></button>
+<div class="cr-project-info"><div><h3>Consent management setup</h3><p>A look at the Cookiebot CMP setup in WordPress.</p></div><span class="cr-project-arrow" aria-hidden="true">↗</span></div><p class="cr-caption">Original screenshot crop · Click to take a closer look</p></div></article><article class="cr-slide" data-author="Lukas Weber" data-reading-time="10000" aria-label="Review 2 of 3" aria-roledescription="slide" hidden>
+<div class="cr-review"><div class="cr-review-top"><div class="cr-stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span><span class="cr-rating">5.0</span></div><span class="cr-type">Written feedback</span></div>
+<div class="cr-quote-mark" aria-hidden="true">“</div><blockquote class="cr-short">Really good work</blockquote>
+<div class="cr-author"><img src="./assets/reviews/lukas-weber-avatar.webp" alt="Lukas Weber profile photo from supplied review" width="160" height="160" loading="lazy"/><div><p class="cr-author-name">Lukas Weber</p><div class="cr-author-country"><span aria-hidden="true">🇩🇪</span> Germany</div></div><span class="cr-author-icon" aria-hidden="true">”</span></div></div>
+<div class="cr-project"><div class="cr-project-eyebrow"><span>THE ACCOMPANYING PROJECT</span><span>Shopify · Meta</span></div>
+<button class="cr-window" type="button" data-enlarge data-title="Shopify &amp; Meta integration" aria-label="Enlarge Shopify &amp; Meta integration screenshot"><span class="cr-window-bar" aria-hidden="true"><span class="cr-window-dot"></span><span class="cr-window-dot"></span><span class="cr-window-dot"></span><span class="cr-window-label">Implementation snapshot</span><span class="cr-window-enlarge">⤢</span></span><img src="./assets/reviews/lukas-weber-project.webp" alt="Facebook &amp; Instagram data-sharing configuration in Shopify." width="1600" height="880" loading="lazy"/></button>
+<div class="cr-project-info"><div><h3>Shopify &amp; Meta integration</h3><p>Facebook &amp; Instagram data-sharing configuration in Shopify.</p></div><span class="cr-project-arrow" aria-hidden="true">↗</span></div><p class="cr-caption">Original screenshot crop · Click to take a closer look</p></div></article><article class="cr-slide" data-author="Tinara Wlins" data-reading-time="28000" aria-label="Review 3 of 3" aria-roledescription="slide" hidden>
+<div class="cr-review"><div class="cr-review-top"><div class="cr-stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span><span class="cr-rating">5.0</span></div><span class="cr-type">Written feedback</span></div>
+<div class="cr-quote-mark" aria-hidden="true">“</div><blockquote class="">The extended timeline from my end in updating my website caused me issues but this Mezbah provided additional support and customer service making it an easy road to get tracking and tagging correct for my Meta Ads. High quality service and high value delivery of code and actions from this provider. I will use this service consistently in my business moving forward.</blockquote>
+<div class="cr-author"><img src="./assets/reviews/tinara-wlins-avatar.webp" alt="Tinara Wlins profile photo from supplied review" width="160" height="160" loading="lazy"/><div><p class="cr-author-name">Tinara Wlins</p><div class="cr-author-country"><span aria-hidden="true">🇺🇸</span> United States</div></div><span class="cr-author-icon" aria-hidden="true">”</span></div></div>
+<div class="cr-project"><div class="cr-project-eyebrow"><span>THE ACCOMPANYING PROJECT</span><span>Meta · Event tracking</span></div>
+<button class="cr-window" type="button" data-enlarge data-title="Meta event tracking support" aria-label="Enlarge Meta event tracking support screenshot"><span class="cr-window-bar" aria-hidden="true"><span class="cr-window-dot"></span><span class="cr-window-dot"></span><span class="cr-window-dot"></span><span class="cr-window-label">Implementation snapshot</span><span class="cr-window-enlarge">⤢</span></span><img src="./assets/reviews/tinara-wlins-project.webp" alt="An accompanying snapshot from Meta Events Manager." width="1600" height="880" loading="lazy"/></button>
+<div class="cr-project-info"><div><h3>Meta event tracking support</h3><p>An accompanying snapshot from Meta Events Manager.</p></div><span class="cr-project-arrow" aria-hidden="true">↗</span></div><p class="cr-caption">Original screenshot crop · Click to take a closer look</p></div></article></div>
+<div class="cr-bottom"><div class="cr-rotation"><span class="cr-rotation-dot" aria-hidden="true"></span><span data-status>Auto-playing · pause anytime</span></div><div class="cr-controls"><span class="cr-counter"><b data-current>01</b> / 03</span><button class="cr-control cr-pause" type="button" data-rotation aria-label="Pause automatic slideshow">Ⅱ</button><button class="cr-control" type="button" data-prev aria-label="Previous review">←</button><button class="cr-control" type="button" data-next aria-label="Next review">→</button></div></div>
+<div class="cr-tabs" role="group" aria-label="Choose a review"><button class="cr-tab" type="button" aria-pressed="true" aria-label="Show review by jamesdodds"><img src="./assets/reviews/jamesdodds-avatar.webp" alt="" width="160" height="160" loading="lazy"/><span><span class="cr-tab-title">jamesdodds</span><span class="cr-tab-label">Consent management</span></span><span class="cr-tab-no">01</span><span class="cr-tab-progress" aria-hidden="true"></span></button><button class="cr-tab" type="button" aria-pressed="false" aria-label="Show review by Lukas Weber"><img src="./assets/reviews/lukas-weber-avatar.webp" alt="" width="160" height="160" loading="lazy"/><span><span class="cr-tab-title">Lukas Weber</span><span class="cr-tab-label">Shopify tracking</span></span><span class="cr-tab-no">02</span><span class="cr-tab-progress" aria-hidden="true"></span></button><button class="cr-tab" type="button" aria-pressed="false" aria-label="Show review by Tinara Wlins"><img src="./assets/reviews/tinara-wlins-avatar.webp" alt="" width="160" height="160" loading="lazy"/><span><span class="cr-tab-title">Tinara Wlins</span><span class="cr-tab-label">Meta tracking</span></span><span class="cr-tab-no">03</span><span class="cr-tab-progress" aria-hidden="true"></span></button></div><p class="cr-sr" data-announcement role="status" aria-live="polite" aria-atomic="true"></p>
+<div class="cr-footnote"><p>Review text reproduced from supplied screenshots. Project images are cropped and lightly enhanced; original image detail is limited.</p><a class="cr-contact" href="https://wa.me/8801737254856?text=Hi%20Mezbaul%2C%20I%27d%20like%20to%20discuss%20my%20tracking%20setup." target="_blank" rel="noopener noreferrer">Let’s discuss your project <span aria-hidden="true">↗</span></a></div>
+</div><dialog class="cr-dialog" aria-labelledby="cr-dialog-title"><div class="cr-dialog-header"><h3 id="cr-dialog-title">Project screenshot</h3><button class="cr-dialog-close" type="button" aria-label="Close enlarged screenshot">×</button></div><img class="cr-dialog-image" alt=""/><p class="cr-dialog-caption">Supplied project screenshot · Cropped, resized and lightly sharpened. No project data or interface details have been reconstructed.</p></dialog></section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-photo">
+        <img src="./assets/portrait.webp" alt="Portrait of Md. Mezbaul Hasan" width="840" height="980" loading="lazy" decoding="async"/>
+        <div class="about-badge">
+          <img src="./assets/avatar.webp" alt="" width="84" height="84" loading="lazy" decoding="async"/>
+          <div>
+            <b>Md. Mezbaul Hasan</b>
+            <span>Analytics &amp; Conversion Tracking Specialist</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="kicker">About me</span>
+        <h2>Measurement you can trust —<br/><em>built with care.</em></h2>
+        <p>I’m Md. Mezbaul Hasan, an analytics and conversion tracking specialist. I help ecommerce and lead-generation businesses get clean, reliable data across Meta, Google, GA4 and TikTok — so marketing decisions are based on what actually happened.</p>
+        <p>My focus is end-to-end execution: thoughtful event design, web and server-side implementation, careful validation (DebugView, Events Manager, deduplication checks) and documentation you can actually use. Attention to detail matters more than rushing — that’s what keeps tracking healthy long after launch.</p>
+        <div class="about-chips">
+          <span>Server-side GTM</span>
+          <span>Meta CAPI</span>
+          <span>GA4 ecommerce</span>
+          <span>Google Ads</span>
+          <span>TikTok Events API</span>
+          <span>Shopify</span>
+          <span>Consent-aware tagging</span>
+        </div>
+        <div class="about-cta">
+          <a class="btn btn-primary" href="https://wa.me/8801737254856?text=Hi%20Mezbaul%2C%20I%27d%20like%20to%20discuss%20my%20tracking%20setup." target="_blank" rel="noopener noreferrer">Let’s talk on WhatsApp</a>
+          <a class="btn btn-ghost" href="mailto:mdmezbaulhasan@gmail.com">Email me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK A CALL -->
+  <section class="booking" id="book">
+    <div class="container">
+      <div class="bk-head">
+        <div>
+          <span class="kicker">Book a free call</span>
+          <h2 class="section-title">Let&#x27;s find a time<br/><em>that works for you.</em></h2>
+        </div>
+        <p class="section-lead">Pick a slot on my calendar — it&#x27;s free and there&#x27;s no commitment. We&#x27;ll look at your tracking setup and I&#x27;ll tell you exactly what I&#x27;d fix first.</p>
+      </div>
+      <div class="bk-shell">
+        <div class="bk-bar">
+          <span class="bk-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="bk-bar-title">Free consultation · 30 minutes · Google Meet</span>
+          <span class="bk-bar-badge">Timezone-aware booking</span>
+        </div>
+        <div class="bk-frame">
+          <!-- Calendly inline widget -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/mezbaulmarketing/new-meeting?background_color=ffffff&amp;text_color=142333&amp;primary_color=1c6756" style="min-width:260px;height:740px;"></div>
+          <div class="bk-fallback" hidden>
+            <h3>The booking calendar is one click away</h3>
+            <p>If the calendar does not load here, open it in a new tab and pick a slot — or send me a message and I will book it for you.</p>
+            <div class="bk-actions">
+              <a class="btn btn-primary" href="https://calendly.com/mezbaulmarketing/new-meeting" target="_blank" rel="noopener noreferrer">Open booking calendar</a>
+              <a class="btn btn-ghost" href="https://wa.me/8801737254856?text=Hi%20Mezbaul%2C%20I%27d%20like%20to%20book%20a%20free%20call." target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="bk-note">Can&#x27;t find a suitable slot? <a href="https://wa.me/8801737254856?text=Hi%20Mezbaul%2C%20I%27d%20like%20to%20book%20a%20free%20call." target="_blank" rel="noopener noreferrer">Message me on WhatsApp</a> or <a href="mailto:mdmezbaulhasan@gmail.com?subject=Free%20call%20booking">email me</a> — I usually reply within a day.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <span class="kicker kicker-light">Let’s work together</span>
+      <h2>Let’s make your tracking <em>reliable.</em></h2>
+      <p>Tell me about your store or website and what you need measured. I’ll reply with a clear plan — no jargon, no guesswork.</p>
+      <div class="contact-cta">
+        <a class="btn btn-light" href="https://wa.me/8801737254856?text=Hi%20Mezbaul%2C%20I%27d%20like%20to%20discuss%20my%20tracking%20setup." target="_blank" rel="noopener noreferrer">
+          <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.83c2.16 0 4.19.84 5.72 2.37a8.04 8.04 0 0 1 2.37 5.72c0 4.46-3.63 8.08-8.1 8.08a8.2 8.2 0 0 1-4.13-1.13l-.3-.18-3.08.81.82-3-.19-.31a8.05 8.05 0 0 1-1.24-4.29c0-4.45 3.63-8.07 8.13-8.07zm-2.5 4.2c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29-.25-.13-1.46-.72-1.69-.8-.23-.09-.39-.13-.56.12-.17.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.65-1.23-1.46-1.37-1.71-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.55-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48z"/></svg>
+          Chat on WhatsApp
+        </a>
+        <a class="btn btn-outline-light" href="mailto:mdmezbaulhasan@gmail.com">mdmezbaulhasan@gmail.com</a>
+      </div>
+
+        <form class="cform" id="contact-form" novalidate>
+          <div class="cform-head">
+            <h3>Send me a message</h3>
+            <p>Fill in the form below — it opens WhatsApp with your message ready to send. Prefer email? Use the link below the button.</p>
+          </div>
+          <div class="cform-grid">
+            <label class="cform-field"><span>Your name *</span><input type="text" name="name" autocomplete="name" placeholder="John Smith" required/></label>
+            <label class="cform-field"><span>Email *</span><input type="email" name="email" autocomplete="email" placeholder="john@company.com" required/></label>
+            <label class="cform-field"><span>Website / store (optional)</span><input type="url" name="website" autocomplete="url" placeholder="https://yourstore.com"/></label>
+            <label class="cform-field"><span>What do you need? *</span>
+              <select name="service" required>
+                <option value="" selected disabled>Choose a service</option>
+                <option>Meta Pixel + Conversions API</option>
+                <option>GA4 Ecommerce Tracking</option>
+                <option>Google Ads Conversion Tracking</option>
+                <option>TikTok Pixel + Events API</option>
+                <option>Server-side GTM / custom events</option>
+                <option>Forms, booking &amp; video tracking</option>
+                <option>Full tracking audit</option>
+                <option>Something else</option>
+              </select>
+            </label>
+          </div>
+          <label class="cform-field"><span>Tell me about your project *</span><textarea name="message" rows="5" placeholder="What is your store or website, and what should be tracked?" required></textarea></label>
+          <div class="cform-foot">
+            <button class="btn btn-primary" type="submit">
+              <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.83c2.16 0 4.19.84 5.72 2.37a8.04 8.04 0 0 1 2.37 5.72c0 4.46-3.63 8.08-8.1 8.08a8.2 8.2 0 0 1-4.13-1.13l-.3-.18-3.08.81.82-3-.19-.31a8.05 8.05 0 0 1-1.24-4.29c0-4.45 3.63-8.07 8.13-8.07zm-2.5 4.2c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29-.25-.13-1.46-.72-1.69-.8-.23-.09-.39-.13-.56.12-.17.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.65-1.23-1.46-1.37-1.71-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.55-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48z"/></svg>
+              Send via WhatsApp
+            </button>
+            <a class="cform-mail" href="mailto:mdmezbaulhasan@gmail.com?subject=Tracking%20project%20enquiry">or send an email instead</a>
+          </div>
+          <p class="cform-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/mdmezbaul/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://www.facebook.com/mezbaulhasantajkina" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.61 23.09 24 18.1 24 12.07z"/></svg>
+          Facebook
+        </a>
+        <a href="mailto:mdmezbaulhasan@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          Email
+        </a>
+        <a href="#book">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Book a call
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>© 2026 Md. Mezbaul Hasan — Analytics &amp; Conversion Tracking Specialist</div>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#book">Book a call</a>
+      <a href="#contact">Contact</a>
+      <a href="https://wa.me/8801737254856" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Evidence lightbox -->
+<dialog class="zoom-dialog" id="zoom-dialog" aria-labelledby="zoom-title">
+  <div class="zoom-head">
+    <h3 id="zoom-title">Implementation screenshot</h3>
+    <button class="zoom-close" type="button" aria-label="Close enlarged screenshot">×</button>
+  </div>
+  <img class="zoom-image" alt=""/>
+  <p class="zoom-caption">Demo/training implementation screenshot · annotated to highlight key technical details.</p>
+</dialog>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Md. Mezbaul Hasan",
+  "jobTitle": "Analytics & Conversion Tracking Specialist",
+  "email": "mailto:mdmezbaulhasan@gmail.com",
+  "knowsAbout": ["Google Analytics 4", "Meta Pixel", "Meta Conversions API", "Google Ads Conversion Tracking", "TikTok Events API", "Google Tag Manager", "Server-side tagging", "Shopify tracking"],
+  "sameAs": [
+    "https://www.linkedin.com/in/mdmezbaul/",
+    "https://www.facebook.com/mezbaulhasantajkina"
+  ]
+}
+</script>
+<script src="./review-showcase.js" defer></script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script>
+(function () {
+  // Mobile menu
+  var toggle = document.querySelector('[data-menu-toggle]');
+  var menu = document.querySelector('[data-mobile-menu]');
+  if (toggle && menu) {
+    toggle.addEventListener('click', function () {
+      var open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    });
+    menu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+  // Evidence lightbox
+  var dialog = document.getElementById('zoom-dialog');
+  if (dialog && typeof dialog.showModal === 'function') {
+    var dImg = dialog.querySelector('.zoom-image');
+    var dTitle = document.getElementById('zoom-title');
+    var opener = null;
+    document.querySelectorAll('[data-zoom]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        opener = btn;
+        dImg.src = btn.getAttribute('data-zoom');
+        dImg.alt = 'Enlarged: ' + (btn.getAttribute('data-zoom-title') || 'screenshot');
+        dTitle.textContent = btn.getAttribute('data-zoom-title') || 'Implementation screenshot';
+        dialog.showModal();
+      });
+    });
+    dialog.querySelector('.zoom-close').addEventListener('click', function () { dialog.close(); });
+    dialog.addEventListener('click', function (e) { if (e.target === dialog) dialog.close(); });
+    dialog.addEventListener('close', function () { if (opener) opener.focus(); });
+  }
+
+  // Contact form: validates, then hands off to WhatsApp with a prefilled message
+  var form = document.getElementById('contact-form');
+  if (form) {
+    var status = form.querySelector('[data-form-status]');
+    var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    function setErr(input, msg) {
+      var f = input.closest('.cform-field');
+      if (msg) { f.classList.add('invalid'); input.setAttribute('aria-invalid', 'true'); }
+      else { f.classList.remove('invalid'); input.removeAttribute('aria-invalid'); }
+      return !msg;
+    }
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = form.elements['name'], email = form.elements['email'], website = form.elements['website'], service = form.elements['service'], message = form.elements['message'];
+      var ok = true;
+      ok = setErr(name, name.value.trim() ? '' : 'Please enter your name') && ok;
+      ok = setErr(email, emailRe.test(email.value.trim()) ? '' : 'Please enter a valid email address') && ok;
+      ok = setErr(service, service.value ? '' : 'Please choose a service') && ok;
+      ok = setErr(message, message.value.trim().length >= 10 ? '' : 'Please write a little more (at least 10 characters)') && ok;
+      if (!ok) {
+        status.textContent = 'Please fix the highlighted fields above.';
+        status.classList.add('error');
+        var bad = form.querySelector('.invalid input, .invalid select, .invalid textarea');
+        if (bad) bad.focus();
+        return;
+      }
+      status.classList.remove('error');
+      var text = [
+        'Hi Mezbaul, I would like to discuss my tracking setup.',
+        '',
+        'Name: ' + name.value.trim(),
+        'Email: ' + email.value.trim(),
+        'Website: ' + (website.value.trim() || '—'),
+        'Service: ' + service.value,
+        '',
+        'Message:',
+        message.value.trim()
+      ].join('\n');
+      window.open('https://wa.me/8801737254856?text=' + encodeURIComponent(text), '_blank', 'noopener');
+      status.textContent = 'Opening WhatsApp with your message… If nothing opens, please email mdmezbaulhasan@gmail.com';
+      form.reset();
+    });
+  }
+  // Calendly graceful fallback (sandboxed preview / blocked embed / offline)
+  var cw = document.querySelector('.calendly-inline-widget');
+  var fb = document.querySelector('.bk-fallback');
+  function showBkFallback() { if (cw && fb) { fb.hidden = false; cw.style.display = 'none'; } }
+  var sandboxed = !window.location.host;
+  if (sandboxed) {
+    showBkFallback();
+  } else if (cw && fb) {
+    setTimeout(function () {
+      if (!cw.querySelector('iframe')) showBkFallback();
+    }, 3500);
+  }
+})();
+</script>
+</body>
+</html>
